@@ -84,12 +84,10 @@ class PillsburyPanel2 extends JPanel
             {
                 pressed = true;
                 button1.setText("reset");
-                button1.setActionCommand("reset");
             }
             else
             {
                 button1.setText("Press my belly.");
-                button1.setActionCommand("Press my belly.");
                 pressed = false;
             }
             drawP.repaint();
@@ -110,7 +108,7 @@ class PillsburyPanel2 extends JPanel
             g.setFont(font);
             if (pressed)
             {
-                g.drawString("tee hee", 100, 100);
+                g.drawString("tee hee", 70, 100);
             }
         }
     }
